@@ -33,7 +33,7 @@ const Blog = ({ blog, likePost, removeBlog, loggedUser }) => {
       <div style={showWhenVisible} id="urlLikesExpanded">
         <div>{blog.title} {blog.author} <button onClick={toggleVisibility}>hide</button></div>
         <div>{blog.url}</div>
-        <div>likes {blog.likes} <button onClick={likePost}>like</button></div>
+        <div className="likeDiv">likes {blog.likes} <button onClick={likePost}>like</button></div>
         <div>{blog.user.name}</div>
         {RemoveBlogButton}
       </div>
